@@ -23,6 +23,48 @@
   color: #61dafb;
 }
 
+.hide {
+  opacity: 0;
+}
+
+.mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.menu{
+  width: 12rem;
+  height: 4.5rem;
+  background-color: #f4f4f4;
+  color: #333;
+  border: 1px solid #aaa;
+  box-shadow: 2px 2px 2px #999;
+  border-radius: 0.2rem;
+  list-style: none;
+  position: fixed;
+  padding-left: 0;
+  margin: 0;
+}
+.menu.off{
+  top: -200%;
+  left: -200%;
+}
+.menu-item{
+  height: 1.5rem;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  font-weight: 100;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+.menu-item:hover,
+.menu-item:active {
+  background-color: rgba(0,0,0,.1);
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
